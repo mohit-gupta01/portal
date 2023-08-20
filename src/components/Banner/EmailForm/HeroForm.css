@@ -1,0 +1,61 @@
+.hero-form {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    margin: auto auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16.5px;
+    opacity: 0;
+    animation: fade-in 4s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 100%;
+    }
+}
+
+.hero-form-heading {
+    padding-bottom: 11.5px;
+}
+
+.hero-form-input {
+    border-radius: 50px;
+    padding: 6.75px;
+    background-color: #444444;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-form-input input {
+    font-family: 'Poppins-Medium';
+    font-size: 16.5px;
+    padding-left: 28px;
+    background: none;
+    width: 150px;
+    border: none;
+    color: #BBBBBB;
+    border-radius: 50px;
+    outline: none;
+}
+.hero-form-input input::placeholder{
+    color: #BBBBBB;
+}
+
+.hero-form-input button {
+    height: 48px;
+    border-radius: 50px;
+    padding: 5px 11px;
+    width: fit-content;
+    font-size: 16.5px;
+    font-family: 'Poppins-SemiBold';
+    background-color: #278AFF;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}

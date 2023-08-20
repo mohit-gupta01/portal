@@ -1,0 +1,70 @@
+.capabilities {
+    box-sizing: content-box;
+    color: black;
+    height: 67.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: appear 3s forwards;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.words {
+    overflow: hidden;
+}
+
+.capabilities span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: #0e6ffc;
+    animation: spin_words 12s infinite;
+    animation-delay: 5s;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-105%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-205%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-305%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-405%);
+    }
+
+    100% {
+        transform: translateY(-400%);
+    }
+}

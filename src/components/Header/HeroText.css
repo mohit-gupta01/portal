@@ -1,0 +1,62 @@
+.header-text{
+    padding-top: 14px;
+}
+.hero-text {
+    font-family: 'Poppins-Regular';
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text-content {
+    position: relative;
+    color: #222;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+}
+
+.hero-text-content:nth-child(1):before {
+    content: attr(data-text);
+    position: absolute;
+    color: #FFFFFF;
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    animation: animate 1s forwards;
+    animation-delay: 100ms;
+    animation-iteration-count: 1;
+}
+
+.hero-text-content:nth-child(2):before {
+    content: attr(data-text);
+    position: absolute;
+    color: #FFFFFF;
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    animation: animate 1s forwards;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+        color: #fff;
+        opacity: 70%;
+    }
+}
