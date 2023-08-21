@@ -9,7 +9,7 @@ const HeroBanner = () => {
     useEffect(() => {
         setTimeout(() => {
             lottieRef.current.play();
-        }, 5000);
+        }, 2500);
     }, []);
     return (
         <div className='banner'>

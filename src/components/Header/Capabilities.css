@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    animation: appear 3s forwards;
+    animation: appear 2s forwards;
     animation-iteration-count: 1;
     animation-delay: 3s;
 }
@@ -30,38 +30,43 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    color: #0e6ffc;
-    animation: spin_words 12s infinite;
-    animation-delay: 5s;
+    animation: spin_words 10s infinite;
+    animation-delay: 3s;
 }
 
 @keyframes spin_words {
-    10% {
-        transform: translateY(-105%);
+    10%{
+        transform: translateY(1%);
+    }
+    20%{
+        transform: translateY(0%);
+    }
+    30% {
+        transform: translateY(-101%);
     }
 
-    25% {
+    40% {
         transform: translateY(-100%);
     }
 
-    35% {
-        transform: translateY(-205%);
-    }
-
     50% {
-        transform: translateY(-200%);
+        transform: translateY(-201%);
     }
 
     60% {
-        transform: translateY(-305%);
+        transform: translateY(-200%);
     }
 
-    75% {
+    70% {
+        transform: translateY(-301%);
+    }
+
+    80% {
         transform: translateY(-300%);
     }
 
-    85% {
-        transform: translateY(-405%);
+    90% {
+        transform: translateY(-401%);
     }
 
     100% {

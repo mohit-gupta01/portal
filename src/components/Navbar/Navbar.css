@@ -59,11 +59,11 @@
 }
 
 .b1 {
-    animation: a1 6s infinite;
+    animation: a1 15s infinite;
 }
 
 .b2 {
-    animation: a2 6s infinite;
+    animation: a2 15s infinite;
 }
 
 @keyframes a1 {
