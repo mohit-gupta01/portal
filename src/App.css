@@ -1,14 +1,17 @@
 @font-face {
   font-family: 'Poppins-Regular';
   src: url('/src/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Poppins-Medium';
   src: url('/src/fonts/Poppins/Poppins-Medium.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Poppins-SemiBold';
   src: url('/src/fonts//Poppins/Poppins-SemiBold.ttf');
+  font-display: swap;
 }
 
 
@@ -21,7 +24,8 @@ body {
   display: grid;
   background-color: #000000;
   color: white;
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
 }
 

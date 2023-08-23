@@ -30,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    animation: spin_words 10s infinite;
+    animation: spin_words 12s infinite;
     animation-delay: 3s;
 }
 

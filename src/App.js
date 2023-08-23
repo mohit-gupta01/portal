@@ -9,9 +9,7 @@ const App = () => {
 
   useEffect(() => {
     window.onload = () => {
-      setTimeout(() => {
         setIsPageLoaded(true);
-      }, 1500);
     };
   }, []);
 

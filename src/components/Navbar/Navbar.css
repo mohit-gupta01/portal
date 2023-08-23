@@ -23,7 +23,8 @@
 .underlined-heading {
     position: relative;
     display: inline-block;
-    font-family: 'Cantarell-Bold';
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
     font-size: 24.75px;
 }
 
@@ -45,7 +46,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .announcement-heading span {
