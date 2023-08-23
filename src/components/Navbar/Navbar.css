@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Cantarell-Bold';
-    font-weight: 700;
-    src: url('/src/fonts/Cantarell/Cantarell-Bold.ttf');
-}
 
 .navbar {
     height: 50px;
@@ -23,8 +18,7 @@
 .underlined-heading {
     position: relative;
     display: inline-block;
-    font-family: 'Cantarell', sans-serif;
-    font-weight: 700;
+    font-family: 'Cantarell-Bold', sans-serif;
     font-size: 24.75px;
 }
 
@@ -46,8 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins-Regular', sans-serif;
 }
 
 .announcement-heading span {

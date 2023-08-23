@@ -2,8 +2,7 @@
     padding-top: 14px;
 }
 .hero-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-family: 'Poppins-Regular', sans-serif;
     font-size: 45px;
     display: flex;
     flex-direction: column;

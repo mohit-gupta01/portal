@@ -13,7 +13,11 @@
   src: url('/src/fonts//Poppins/Poppins-SemiBold.ttf');
   font-display: swap;
 }
-
+@font-face {
+  font-family: 'Cantarell-Bold';
+  src: url('/src/fonts/Cantarell/Cantarell-Bold.ttf');
+  font-display: swap;
+}
 
 * {
   margin: 0;
@@ -24,8 +28,7 @@ body {
   display: grid;
   background-color: #000000;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-family: 'Poppins-Regular', sans-serif;
   overflow-x: hidden;
 }
 
@@ -80,7 +83,6 @@ hr {
   align-items: center;
   justify-content: center;
   font-family: 'Poppins-Regular';
-  font-weight: 300;
 }
 
 .gradient-background {
