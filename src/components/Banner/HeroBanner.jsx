@@ -3,7 +3,7 @@ import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
 import '@dotlottie/react-player/dist/index.css'; 
 import './HeroBanner.css';
 import HeroForm from './EmailForm/HeroForm';
-import DotLottieAnimation from "../../lotties/HeroAnimationCompressed.lottie"
+
 const HeroBanner = () => {
     const lottieRef = useRef();
     useEffect(() => {
@@ -17,8 +17,8 @@ const HeroBanner = () => {
             <div className="animation-container  ease-in-out">
                 <DotLottiePlayer
                     lottieRef={lottieRef}
-                    src = {DotLottieAnimation}
-                    autoplay={false}
+                    src = {process.env.PUBLIC_URL + '/lotties/HeroAnimationCompressed.lottie'}
+                    autoplay={true}
                     loop={true}
                 />
             </div>
