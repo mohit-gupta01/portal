@@ -35,18 +35,18 @@
     font-size: 16.5px;
     padding-left: 28px;
     background: none;
-    width: 150px;
+    width: auto;
     border: none;
     color: #BBBBBB;
     border-radius: 50px;
     outline: none;
 }
-.hero-form-input input::placeholder{
+
+.hero-form-input input::placeholder {
     color: #BBBBBB;
 }
 
 .hero-form-input button {
-    height: 48px;
     border-radius: 50px;
     padding: 5px 11px;
     width: fit-content;
@@ -58,4 +58,26 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
+}
+
+.hero-form-button:hover {
+    background-color: #1968C5;
+}
+
+.arrow-icon {
+    color: white;
+    background-color: #1A1A1A;
+    border-radius: 50px;
+    margin-left: 5px;
+    padding: 11px;
+}
+
+.hero-form-button:hover .arrow-icon {
+    font-size: 1.25rem;
+    padding: 9.3px;
+}
+
+.error-message{
+    padding-top: 7px;
+    color: #FFA7A7;
 }

@@ -1,29 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
-import HeroBanner from './components/Banner/HeroBanner';
+import Home from './components/Home';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 const App = () => {
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
-
-  useEffect(() => {
-    window.onload = () => {
-        setIsPageLoaded(true);
-    };
-  }, []);
-
   return (
     <div>
-      {!isPageLoaded ? (
-        <div></div>
-      ) : (
-        <div>
-          <Navbar />
-          <Header />
-          <HeroBanner />
-        </div>
-      )}
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const HeroBanner = () => {
     useEffect(() => {
         setTimeout(() => {
             lottieRef.current.play();
-        }, 2500);
+        }, 1000);
     }, []);
     return (
         <div className='banner'>
@@ -22,6 +22,7 @@ const HeroBanner = () => {
                     loop={true}
                 />
             </div>
+            
         </div>
     );
 }

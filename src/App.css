@@ -1,21 +1,24 @@
 @font-face {
-  font-family: 'Poppins-Regular';
-  src: url('/src/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-family: "Cantarell-Bold";
+  src: url("./../public/fonts/Cantarell/Cantarell-Bold.ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Poppins-Medium';
-  src: url('/src/fonts/Poppins/Poppins-Medium.ttf');
+  font-family: "Poppins-Regular";
+  src: url("./../public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Poppins-SemiBold';
-  src: url('/src/fonts//Poppins/Poppins-SemiBold.ttf');
+  font-family: "Poppins-Medium";
+  src: url("./../public/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
-  font-family: 'Cantarell-Bold';
-  src: url('/src/fonts/Cantarell/Cantarell-Bold.ttf');
+  font-family: "Poppins-SemiBold";
+  src: url("./../public/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
   font-display: swap;
 }
 
