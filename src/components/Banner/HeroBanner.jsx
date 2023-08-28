@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import Lottie from "lottie-react";
-import HeroAnimation from "../../lotties/HeroAnimationCompressed.json";
+import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css'; 
 import './HeroBanner.css';
 import HeroForm from './EmailForm/HeroForm';
-
+import DotLottieAnimation from "../../lotties/HeroAnimationCompressed.lottie"
 const HeroBanner = () => {
     const lottieRef = useRef();
     useEffect(() => {
@@ -15,9 +15,9 @@ const HeroBanner = () => {
         <div className='banner'>
             <HeroForm />
             <div className="animation-container  ease-in-out">
-                <Lottie
+                <DotLottiePlayer
                     lottieRef={lottieRef}
-                    animationData={HeroAnimation}
+                    src = {DotLottieAnimation}
                     autoplay={false}
                     loop={true}
                 />
