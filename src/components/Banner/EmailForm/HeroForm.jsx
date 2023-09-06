@@ -41,25 +41,25 @@ const HeroForm = () => {
         <div className='hero-form'>
             <span className='hero-form-heading'>Enjoy Early Exclusive Benefits, Absolutely Free!</span>
             <div className='hero-form-input'>
-                
-                    <input
-                        type="email"
-                        name='email'
-                        id='email'
-                        placeholder={getPlaceholderText()}
-                        autoCapitalize='off'
-                        autoCorrect='off'
-                        spellCheck='false'
-                        onFocus={handleInputFocus}
-                        onBlur={handleInputBlur}
-                        value={email}
-                        onChange={(e) => { setEmail(e.target.value); setEmptyError(false); setInvalidError(false); }}
-                    />
-                    <button className='hero-form-button' onClick={handleButtonClick}>
-                        <span className='button-text'>Get Exclusive Benefits</span>
-                        <BsArrowReturnLeft className='arrow-icon' />
-                    </button>
-                
+
+                <input
+                    type="email"
+                    name='email'
+                    id='email'
+                    placeholder={getPlaceholderText()}
+                    autoCapitalize='off'
+                    autoCorrect='off'
+                    spellCheck='false'
+                    onFocus={handleInputFocus}
+                    onBlur={handleInputBlur}
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value); setEmptyError(false); setInvalidError(false); }}
+                />
+                <button className='hero-form-button' onClick={handleButtonClick}>
+                    <span className='button-text'>Get Exclusive Benefits</span>
+                    <BsArrowReturnLeft className='arrow-icon' />
+                </button>
+
             </div>
             {isEmptyError && <span className='error-message'>{emptyErrorMessages[Math.floor(Math.random() * emptyErrorMessages.length)]}</span>}
             {isInvalidError && <span className='error-message'>{invalidErrorMessages[Math.floor(Math.random() * invalidErrorMessages.length)]}</span>}

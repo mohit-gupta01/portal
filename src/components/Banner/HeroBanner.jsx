@@ -1,16 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
-import '@dotlottie/react-player/dist/index.css'; 
+import React, { useRef } from 'react';
+import { DotLottiePlayer, PlayerEvents } from '@dotlottie/react-player';
+// import '@dotlottie/react-player/dist/index.css'; 
 import './HeroBanner.css';
 import HeroForm from './EmailForm/HeroForm';
 
 const HeroBanner = () => {
     const lottieRef = useRef();
-    useEffect(() => {
-        setTimeout(() => {
-            lottieRef.current.play();
-        }, 1000);
-    }, []);
     return (
         <div className='banner'>
             <HeroForm />
@@ -18,8 +13,15 @@ const HeroBanner = () => {
                 <DotLottiePlayer
                     lottieRef={lottieRef}
                     src = {process.env.PUBLIC_URL + '/lotties/HeroAnimationCompressed.lottie'}
-                    autoplay={true}
-                    loop={true}
+                    autoplay={false}
+                    loop
+                    onEvent={(event = PlayerEvents) => {
+                        if(event === PlayerEvents.Ready){
+                            setTimeout(()=>{
+                                lottieRef.current.play();
+                            }, 500);
+                        }
+                    }}
                 />
             </div>
             
