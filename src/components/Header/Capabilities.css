@@ -13,10 +13,11 @@
 }
 
 @keyframes appear {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -25,22 +26,81 @@
     overflow: hidden;
 }
 
-.capabilities span{
+.fading {
+    background: linear-gradient(0deg, transparent, white, transparent) bottom / var(--d, 50%) 1.5px no-repeat;
+    animation: fade_rule 10s infinite;
+    animation-delay: 1s;
+    transition: 0.5s
+}
+.capabilities span {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     animation: spin_words 10s infinite;
-    animation-delay: 3s;
+    animation-delay: 2s;
+}
+@keyframes fade_rule {
+    0% {
+        --d: 90%;
+    }
+
+    10% {
+        --d: 78%;
+    }
+
+    20% {
+        --d: 78%;
+    }
+
+    30% {
+        --d: 58%;
+    }
+
+    40% {
+        --d: 58%;
+    }
+
+    50% {
+        --d: 98%;
+    }
+
+    60% {
+        --d: 98%;
+    }
+
+    70% {
+        --d: 82%;
+    }
+
+    80% {
+        --d: 82%;
+    }
+
+    90% {
+        --d: 100%;
+    }
+
+    100% {
+        --d: 100%;
+    }
 }
 
+
+
 @keyframes spin_words {
-    10%{
+    0% {
+        transform: translateY(-400%)
+    }
+
+    10% {
         transform: translateY(1%);
     }
-    20%{
+
+    20% {
         transform: translateY(0%);
     }
+
     30% {
         transform: translateY(-101%);
     }

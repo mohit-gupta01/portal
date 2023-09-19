@@ -1,0 +1,209 @@
+.gradient-background {
+    position: relative;
+    top: -10px;
+    height: 390px;
+    background: linear-gradient(to bottom, #03213B, #000101);
+    transition: opacity 0.2s ease;
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    /* When isVisible is true, make it visible */
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.fade_rule {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+    background-image: linear-gradient(to left, #001B2D 0%, #AAAAAA 50%, #001B2D 100%),
+        linear-gradient(to right, #001B2D 0%, #AAAAAA 50%, #001B2D 100%);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100% 100%;
+}
+
+.about .text {
+    font-size: 40px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.about .about-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Poppins-Regular';
+}
+
+
+.brand-heading {
+    position: relative;
+    display: inline-block;
+    font-family: 'Cantarell-Bold', sans-serif;
+    font-size: 40px;
+}
+
+.brand-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 312px;
+    height: 3px;
+    background-image: linear-gradient(to right, #FF2E2E 0%, #FF2E2E 49%, transparent 49%, transparent 51%, #66FF00 51%, #66FF00 100%);
+    background-size: 100% 100%;
+}
+
+.typewriter {
+    color: #fff;
+    opacity: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1.5s linear;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        opacity: 70%;
+    }
+
+    to {
+        width: 100%;
+        opacity: 70%;
+    }
+}
+
+.vertical-line {
+    height: 1px;
+    background-color: #707070;
+    width: 0.5px;
+    transition: height 0.5s;
+    transition-delay: 1s;
+}
+.vertical-line-after{
+    height: 150px;
+}
+
+/* Get a feel try it now styles */
+.exclusive {
+    align-items: center;
+    padding-top: 22px;
+}
+
+.feel-text {
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+}
+
+
+.exclusive-brand-heading {
+    position: relative;
+    display: flex;
+    font-family: 'Cantarell-Bold', sans-serif;
+    font-size: 34.5px;
+    padding-right: 22px;
+    width: 270px;
+}
+
+.exclusive-brand-heading:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 270px;
+    height: 3px;
+    background-image: linear-gradient(to right, #FF2E2E 0%, #FF2E2E 49%, transparent 49%, transparent 51%, #66FF00 51%, #66FF00 100%);
+    background-size: 100% 100%;
+}
+
+/* Toggle Button styles */
+
+.toggle-button {
+    background-color: #252525;
+    width: 102px;
+    height: 42px;
+    border-radius: 50px;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+    position: relative;
+}
+
+.slider {
+    width: 32.5px;
+    height: 32.5px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+input:checked~.toggle-button-css {
+    background-color: #1592E6;
+}
+
+input:checked~.toggle-button-css .slider {
+    transform: translatex(60px);
+}
+
+.toggle-label, .slider {
+    transition: all 0.2s cubic-bezier(0.66, 0.07, 0.58, 1);
+}
+
+.wrapper{
+    padding-top: 12px;
+}
+
+.wrapper input{
+    display: none;
+}
+
+.toggle-button-css {
+    cursor: pointer;
+}
+
+/* Features sections css start */
+
+.features-container{
+    padding: 20px;
+}
+
+/* News section css */
+.news-section{
+    width: 625px;
+    height: 500px;
+    background-color: #151515;
+    margin-right: 14px;
+}
+
+
+
+
+/* News section css ends */
+
+
+
+.concall-section{
+    width: 625px;
+    height: 500px;
+    background-color: #151515;
+    margin-left: 14px;
+}

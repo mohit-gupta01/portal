@@ -25,6 +25,7 @@
 * {
   margin: 0;
   padding: 0;
+  background: none;
 }
 
 body {
@@ -44,60 +45,19 @@ hr {
   margin: 0;
 }
 
-.pr-30 {
-  padding-right: 30px;
+.pr-20 {
+  padding-right: 20px;
 }
 
 .p-10 {
   padding: 10px 0;
 }
 
-.about {
-  padding-top: 50px;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  justify-content: center;
-  margin-top: 45vw;
-  color: #fff;
-  height: 45vh;
-}
-
-.about .text {
-  font-size: 40px;
-  margin: auto;
-  padding-top: 10px;
-}
-
-.fade_rule {
-  height: 1px;
-  width: 66.0em;
-  margin: 0 auto;
-  background-image: linear-gradient(to left, #001B2D 0%, #AAAAAA 50%, #001B2D 100%),
-    linear-gradient(to right, #001B2D 0%, #AAAAAA 50%, #001B2D 100%);
-  background-repeat: no-repeat;
-  background-position: top, bottom;
-  background-size: 100% 100%;
-}
-
-.about .about-text {
+.flex-row{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Poppins-Regular';
 }
-
-.gradient-background {
-  z-index: 1;
-  background: linear-gradient(to bottom, #03213B, #000101);
-  opacity: 0%;
-  animation: fade-in 10s forwards;
-  animation-delay: 10s;
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 100%;
-  }
+.flex-col{
+  display: flex;
+  flex-direction: column;
 }
