@@ -10,7 +10,7 @@
     font-size: 16.5px;
     opacity: 0;
     animation: fade-in 4s forwards;
-    animation-delay: 5s;
+    animation-delay: 4.5s;
     transition: height 0.1s;
 }
 

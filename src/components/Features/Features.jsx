@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BiSolidPointer } from 'react-icons/bi';
 import './Features.css';
+import Concalls from './Concalls/Concalls';
 
 const Features = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -68,16 +69,25 @@ const Features = () => {
                 </div>
             </div>
             <div className='features-container'>
-                <div className="flex-col">
-                    <div className="flex-row">
-                        <div className='news-section'>news</div>
-                        <div className='concall-section'>concalls</div>
+                <div className="flex-row jcCenter">
+                    <div className="flex-col" style={{gap: '22px'}}>
+                        <div className="flex-row">
+                            <div className='news-section'>news</div>
+                        </div>
+                        <div className="flex-row">
+                            <div className='corporate-section'>corporate fillings</div>
+                        </div>
                     </div>
-                    <div className="flex-row">
-                        <div>corporate fillings</div>
-                        <div>forensic</div>
+                    <div className="flex-col"  style={{gap: '22px'}}>
+                        <div className="flex-row">
+                            <div className='concall-section'><Concalls /></div>
+                        </div>
+                        <div className="flex-row">
+                            <div className='forensic-section'>forensic</div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );

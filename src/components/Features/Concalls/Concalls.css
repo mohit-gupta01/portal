@@ -1,0 +1,54 @@
+
+.concall-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.concall-heading-text{
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+    font-weight: 400;
+}
+.concall-body{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.concall-carousel{
+    background-color: #222222;
+    height: 550px;
+    border-radius: 7.5px;
+}
+.headermask{
+    background-color: #2BC1FF;
+    opacity: 7%;
+    height: 70px;
+    width: 530px;
+    position: relative;
+    border-radius: 7.5px;
+}
+
+.infosys-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    height: 70px;
+}
+
+.verticalRule{
+    width: 1px;
+    height: 52px;
+    background-color: #707070;
+    margin-left: 12px;
+}
+
+.infosys-text{
+    font-family: 'Poppins-Regular';
+    font-size: 19px;
+    margin-left: 21px;
+    color: #DDDDDD;
+}

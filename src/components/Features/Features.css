@@ -181,9 +181,14 @@ input:checked~.toggle-button-css .slider {
 }
 
 /* Features sections css start */
-
 .features-container{
-    padding: 20px;
+    position: relative;
+    
+}
+.jcCenter{
+    justify-content: center;
+    gap: 22px;
+    padding-top: 35px;
 }
 
 /* News section css */
@@ -191,19 +196,33 @@ input:checked~.toggle-button-css .slider {
     width: 625px;
     height: 500px;
     background-color: #151515;
-    margin-right: 14px;
+    border-radius: 7.5px;
 }
-
 
 
 
 /* News section css ends */
 
 
-
 .concall-section{
     width: 625px;
-    height: 500px;
+    height: 815px;
     background-color: #151515;
-    margin-left: 14px;
+    border-radius: 7.5px;
+}
+
+
+.corporate-section{
+    width: 625px;
+    height: 566px;
+    background-color: #151515;
+    border-radius: 7.5px;
+}
+
+
+.forensic-section{
+    width: 625px;
+    height: 370px;
+    background-color: #151515;
+    border-radius: 7.5px;
 }
