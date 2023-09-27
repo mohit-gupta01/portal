@@ -1,0 +1,26 @@
+.corporate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+}
+
+.corporate-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.corporate-heading-text{
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.corporate-video{
+    width: 694px;
+}

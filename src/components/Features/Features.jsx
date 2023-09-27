@@ -1,10 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { BiSolidPointer } from 'react-icons/bi';
 import './Features.css';
 import Concalls from './Concalls/Concalls';
+import CorporateFillings from './CorporateFillings/CorporateFillings';
+import { useStateContext } from '../../context/StateContext';
+import News from './News/News';
 
 const Features = () => {
-    const [isVisible, setIsVisible] = useState(false);
+
+    const { isVisible, setIsVisible, isChecked, setChecked, isBannerVisible } = useStateContext();
+
     useEffect(() => {
         // Function to check if the element is in the viewport
         const isInViewport = (element) => {
@@ -31,11 +36,16 @@ const Features = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [setIsVisible]);
+
+    const handleClick = () => {
+        setChecked(document.querySelector("input[type=checkbox]").checked);
+        console.log(isChecked);
+    }
 
 
     return (
-        <div className={`gradient-background ${isVisible ? 'fade-in' : ''}`}>
+        <div className={`gradient-background ${isBannerVisible ? 'fade-in' : ''}`}>
             <div className='about'>
                 <div className='fade_rule'></div>
                 <div className='p-10'>
@@ -60,7 +70,7 @@ const Features = () => {
                     <div className='flex-row' style={{ alignItems: "center", paddingRight: '20px', paddingBottom: '5px' }}>
                         <span className="exclusive-brand-heading">MARKETRACK</span>
                         <div className="wrapper">
-                            <input type="checkbox" id="toggle-button-css" className='toggle-input' />
+                            <input type="checkbox" id="toggle-button-css" className='toggle-input' onChange={handleClick} />
                             <label htmlFor="toggle-button-css" className="toggle-button toggle-button-css toggle-label">
                                 <div className="slider"></div>
                             </label>
@@ -70,20 +80,20 @@ const Features = () => {
             </div>
             <div className='features-container'>
                 <div className="flex-row jcCenter">
-                    <div className="flex-col" style={{gap: '22px'}}>
+                    <div className="flex-col" style={{ gap: '22px' }}>
                         <div className="flex-row">
-                            <div className='news-section'>news</div>
+                            <div className='news-section'><News /></div>
                         </div>
                         <div className="flex-row">
-                            <div className='corporate-section'>corporate fillings</div>
+                            <div className='corporate-section'><CorporateFillings /></div>
                         </div>
                     </div>
-                    <div className="flex-col"  style={{gap: '22px'}}>
+                    <div className="flex-col" style={{ gap: '22px' }}>
                         <div className="flex-row">
                             <div className='concall-section'><Concalls /></div>
                         </div>
                         <div className="flex-row">
-                            <div className='forensic-section'>forensic</div>
+                            <div className='forensic-section'></div>
                         </div>
                     </div>
                 </div>

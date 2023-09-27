@@ -6,16 +6,19 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import { StateContext } from './context/StateContext';
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route exact path='/' element={<Home />} />
-        </Routes>
-      </Router>
-    </div>
+    <StateContext>
+      <div>
+        <Router>
+          <Routes>
+            <Route exact path='/' element={<Home />} />
+          </Routes>
+        </Router>
+      </div>
+    </StateContext>
   );
 };
 

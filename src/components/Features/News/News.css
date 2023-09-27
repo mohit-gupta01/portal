@@ -1,0 +1,27 @@
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.news-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.news-heading-text{
+    font-family: 'Poppins-Regular';
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.news-video{
+    width: 746px;
+}
