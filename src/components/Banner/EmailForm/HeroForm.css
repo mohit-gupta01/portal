@@ -45,7 +45,8 @@
     outline: none;
     transition: width 0.3s;
 }
-.input-width-change input{
+
+.input-width-change input {
     width: 230px;
 }
 
@@ -55,17 +56,21 @@ input:-internal-autofill-selected {
     background-color: #444444 !important;
     color: fieldtext !important;
 }
+
 .hero-form-input input::placeholder {
     color: #BBBBBB;
 }
 
-.hero-form-input button {
+.hero-form-button {
     border-radius: 50px;
     padding: 5px 11px;
     width: fit-content;
     font-size: 16.5px;
     font-family: 'Poppins-SemiBold', sans-serif;
     background-color: #278AFF;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
     border: none;
     display: flex;
     flex-direction: row;
@@ -75,6 +80,7 @@ input:-internal-autofill-selected {
 
 .hero-form-button:hover {
     background-color: #1968C5;
+
 }
 
 .arrow-icon {
@@ -83,6 +89,7 @@ input:-internal-autofill-selected {
     border-radius: 50px;
     margin-left: 5px;
     padding: 11px;
+    transition: all 0.5s ease;
 }
 
 .hero-form-button:hover .arrow-icon {
@@ -90,18 +97,19 @@ input:-internal-autofill-selected {
     padding: 9.3px;
 }
 
-.error-message{
+.error-message {
     padding-top: 7px;
     color: #FFA7A7;
 }
-.red-text input{
+
+.red-text input {
     color: #FFA7A7;
     text-decoration: underline wavy;
 }
 
 /* Already Registered Styles */
 
-.already-registered{
+.already-registered {
     border-radius: 50px;
     padding: 6.75px;
     height: inherit;
@@ -112,15 +120,18 @@ input:-internal-autofill-selected {
     font-family: 'Poppins-Medium';
     font-size: 15.75px;
 }
-.height-after{
+
+.height-after {
     height: 72px;
 }
-.tick{
+
+.tick {
     display: flex;
     flex-direction: row;
     margin: auto;
 }
-.registered-message{
+
+.registered-message {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -132,30 +143,36 @@ input:-internal-autofill-selected {
     width: 0%;
     animation: moving 0.5s linear forwards;
 }
-.registered-check{
+
+.registered-check {
     color: #008EFA;
     width: 48.5px;
     height: 48.5px;
     position: absolute;
     right: 10px;
 }
-.registered-message-text{
+
+.registered-message-text {
     animation: fadeIn 1s;
 }
+
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes moving {
-    0%{
+    0% {
         width: 0%;
         opacity: 0%;
     }
-    100%{
+
+    100% {
         width: 60%;
         opacity: 1;
     }
@@ -163,7 +180,7 @@ input:-internal-autofill-selected {
 
 /* Successfully Registered Styles */
 
-.success{
+.success {
     border-radius: 50px;
     padding: 6.75px;
     height: inherit;
@@ -174,12 +191,14 @@ input:-internal-autofill-selected {
     font-family: 'Poppins-Medium';
     font-size: 15.75px;
 }
-.tick{
+
+.tick {
     display: flex;
     flex-direction: row;
     margin: auto;
 }
-.success-message{
+
+.success-message {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -193,29 +212,35 @@ input:-internal-autofill-selected {
     width: 0%;
     animation: moving 0.5s linear forwards;
 }
-.success-check{
+
+.success-check {
     color: #89FF60;
     width: 48.5px;
     height: 48.5px;
     position: relative;
 }
-.success-message-text{
+
+.success-message-text {
     animation: fadeIn 1s;
 }
+
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes moving {
-    0%{
+    0% {
         width: 0%;
         opacity: 0%;
     }
-    100%{
+
+    100% {
         width: 100%;
         opacity: 1;
     }

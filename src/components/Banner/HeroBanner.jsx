@@ -18,7 +18,7 @@ const HeroBanner = () => {
     return (
         <div className='banner'>
             <HeroForm />
-            <div className="animation-container  ease-in-out">
+            <div className="animation-container ease-in-out">
                 <Lottie
                     lottieRef={lottieRef}
                     animationData={HeroAnimation}

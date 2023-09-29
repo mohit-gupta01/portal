@@ -45,6 +45,12 @@
     font-family: 'Poppins-Regular';
 }
 
+/* Heading Container CSS */
+
+.heading-container .text{
+    margin-top: 24px;
+    position: relative;
+}
 
 .brand-heading {
     position: relative;
@@ -63,6 +69,8 @@
     background-image: linear-gradient(to right, #FF2E2E 0%, #FF2E2E 49%, transparent 49%, transparent 51%, #66FF00 51%, #66FF00 100%);
     background-size: 100% 100%;
 }
+
+/* About text with typewriter animation */
 
 .typewriter {
     color: #fff;

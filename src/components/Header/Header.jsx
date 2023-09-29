@@ -4,7 +4,7 @@ import Capabilities from './Capabilities';
 
 const Header = () => {
   return (
-    <div className='header-text'>
+    <div className='header-text' style={{height: '200px'}}>
       <HeroText />
       <Capabilities />
     </div>
