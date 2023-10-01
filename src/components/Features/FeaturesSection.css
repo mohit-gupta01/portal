@@ -1,0 +1,41 @@
+/* Features sections css start */
+.features-container {
+    position: relative;
+
+}
+
+.jcCenter {
+    justify-content: center;
+    gap: 22px;
+    padding-top: 35px;
+}
+
+/* News section css */
+.news-section {
+    width: 625px;
+    height: 500px;
+    background-color: #151515;
+    border-radius: 7.5px;
+}
+
+/* News section css ends */
+
+.concall-section {
+    width: 633px;
+    background-color: #151515;
+    border-radius: 7.5px;
+}
+
+.corporate-section {
+    width: 625px;
+    height: 566px;
+    background-color: #151515;
+    border-radius: 7.5px;
+}
+
+.forensic-section {
+    width: 625px;
+    height: 370px;
+    background-color: #151515;
+    border-radius: 7.5px;
+}

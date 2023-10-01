@@ -1,7 +1,7 @@
 .navbar {
-    height: 50px;
-    padding-top: 18px;
+    height: 80px;
     padding-left: 28.5px;
+    display: flex;
 }
 
 .header {
@@ -34,6 +34,7 @@
 
 .announcement-heading {
     width: 96vw;
+    top: 31px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -85,4 +86,35 @@
     100% {
         opacity: 0;
     }
+}
+
+.navbar-2 {
+    height: 80px;
+    padding-left: 28.5px;
+    display: flex;
+}
+.navbar-mask{
+    height: 80px;
+    position: absolute;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+.nav-email-form{
+    position: absolute;
+    height: 48px;
+    width: 230px;
+    background-color: #278AFF;
+    border-radius: 50px;
+    right: 29px;
+    top: 19px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-email-text{
+    padding-left: 16px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16.5px;
 }

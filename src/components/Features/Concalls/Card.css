@@ -1,0 +1,45 @@
+.card {
+    width: 418px;
+}
+
+.card input{
+    position: absolute;
+}
+
+.card-header {
+    gap: 9px;
+    margin-bottom: 11px;
+}
+
+.card-header img {
+    width: 45px;
+    height: 45px;
+}
+.card #cb1:checked ~ .content-box1{
+    max-height: 304px;
+}
+.card #cb2:checked ~ .content-box2{
+    max-height: 304px;
+}
+.content-box1{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+.content-box2{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.7s;
+}
+.card-content {
+    padding-bottom: 11px;
+    padding-left: 16px;
+    font-size: 15px;
+}
+
+.card-vertical-line {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 0.5px;
+    background-color: #707070;
+}

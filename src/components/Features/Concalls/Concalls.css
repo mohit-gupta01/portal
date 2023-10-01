@@ -1,27 +1,58 @@
 
-.concall-heading{
+.concall-heading {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.concall-heading-text{
+.concall-heading-text {
     font-family: 'Poppins-Regular';
     font-size: 30px;
     font-weight: 400;
 }
-.concall-body{
-    margin-bottom: 15px;
+
+/* CSS for toggle button off state - Starts*/
+
+.concall-body-off {
+    margin-top: 26px;
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
-.concall-carousel{
+
+.infosys-header-off {
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.concall-lottie{
+    position: relative;
+    height: 233px;
+    width: 506px;
+    padding-top: 30px;
+}
+
+/* CSS for toggle button off state - Ends*/
+
+/* CSS for toggle button - ON state */
+
+.concall-body {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.concall-carousel {
     background-color: #222222;
-    height: 550px;
     border-radius: 7.5px;
 }
-.headermask{
+
+.headermask {
     background-color: #2BC1FF;
     opacity: 7%;
     height: 70px;
@@ -30,7 +61,7 @@
     border-radius: 7.5px;
 }
 
-.infosys-header{
+.infosys-header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,16 +70,80 @@
     height: 70px;
 }
 
-.verticalRule{
+.verticalRule {
     width: 1px;
     height: 52px;
     background-color: #707070;
     margin-left: 12px;
 }
 
-.infosys-text{
+.infosys-text {
     font-family: 'Poppins-Regular';
     font-size: 19px;
-    margin-left: 21px;
+    margin-left: 20px;
     color: #DDDDDD;
+}
+
+.carousel-buttons {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+.carousel-button {
+    padding: 5px 20px;
+    color: #AAAAAA;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'InterTight-Regular';
+    transition: all 0.2s;
+}
+
+.button-active {
+    color: #fff;
+    background-color: #5b5959;
+    border-radius: 50px;
+    font-family: 'Inter-Medium';
+}
+
+/* Carousel card css starts */
+
+.card-container {
+    padding: 12px 0;
+    display: flex;
+    margin-left: 44px;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    color: #2BC1FF;
+    background-color: white;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot-active {
+    background-color: blue;
+}
+
+.concall-footer{
+    position: absolute;
+    align-items: center;
+    top: 742px;
+    gap: 5px;
+}
+
+.blurred-text{
+    filter: blur(1.5px);
 }

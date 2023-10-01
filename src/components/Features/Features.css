@@ -47,7 +47,7 @@
 
 /* Heading Container CSS */
 
-.heading-container .text{
+.heading-container .text {
     margin-top: 24px;
     position: relative;
 }
@@ -71,7 +71,9 @@
 }
 
 /* About text with typewriter animation */
-
+.invisible{
+    opacity: 0;
+}
 .typewriter {
     color: #fff;
     opacity: 1;
@@ -83,14 +85,36 @@
 @keyframes typing {
     from {
         width: 0;
-        opacity: 70%;
+        color: #707070;
     }
 
     to {
         width: 100%;
-        opacity: 70%;
+        color: #707070;
     }
 }
+
+.pointer {
+    opacity: 1;
+    scale: 1;
+    animation: pointer-animation 0.4s linear 1.5s;
+}
+
+@keyframes pointer-animation {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 70%;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+/* About text with typewriter animation ends*/
 
 .vertical-line {
     height: 1px;
@@ -99,7 +123,8 @@
     transition: height 0.5s;
     transition-delay: 1s;
 }
-.vertical-line-after{
+
+.vertical-line-after {
     height: 150px;
 }
 
@@ -172,15 +197,16 @@ input:checked~.toggle-button-css .slider {
     transform: translatex(60px);
 }
 
-.toggle-label, .slider {
+.toggle-label,
+.slider {
     transition: all 0.2s cubic-bezier(0.66, 0.07, 0.58, 1);
 }
 
-.wrapper{
+.wrapper {
     padding-top: 12px;
 }
 
-.wrapper input{
+.wrapper input {
     display: none;
 }
 
@@ -188,49 +214,7 @@ input:checked~.toggle-button-css .slider {
     cursor: pointer;
 }
 
-/* Features sections css start */
-.features-container{
-    position: relative;
-    
-}
-.jcCenter{
-    justify-content: center;
-    gap: 22px;
-    padding-top: 35px;
-}
-
-/* News section css */
-.news-section{
-    width: 625px;
-    height: 500px;
-    background-color: #151515;
-    border-radius: 7.5px;
-}
 
 
 
-/* News section css ends */
 
-
-.concall-section{
-    width: 625px;
-    height: 815px;
-    background-color: #151515;
-    border-radius: 7.5px;
-}
-
-
-.corporate-section{
-    width: 625px;
-    height: 566px;
-    background-color: #151515;
-    border-radius: 7.5px;
-}
-
-
-.forensic-section{
-    width: 625px;
-    height: 370px;
-    background-color: #151515;
-    border-radius: 7.5px;
-}

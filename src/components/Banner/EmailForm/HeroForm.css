@@ -68,9 +68,9 @@ input:-internal-autofill-selected {
     font-size: 16.5px;
     font-family: 'Poppins-SemiBold', sans-serif;
     background-color: #278AFF;
-    -webkit-transition: background-color 500ms linear;
-    -ms-transition: background-color 500ms linear;
-    transition: background-color 500ms linear;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
     border: none;
     display: flex;
     flex-direction: row;
@@ -80,7 +80,6 @@ input:-internal-autofill-selected {
 
 .hero-form-button:hover {
     background-color: #1968C5;
-
 }
 
 .arrow-icon {
@@ -89,7 +88,7 @@ input:-internal-autofill-selected {
     border-radius: 50px;
     margin-left: 5px;
     padding: 11px;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .hero-form-button:hover .arrow-icon {
