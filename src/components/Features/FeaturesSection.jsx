@@ -10,7 +10,7 @@ const FeaturesSection = () => {
     return (
         <div>
             <div className='features-container'>
-                <div className="flex-row jcCenter">
+                <div className="features-animate flex-row jcCenter">
                     <div className="flex-col" style={{ gap: '22px' }}>
                         <div className="flex-row">
                             <div className='news-section'><News /></div>

@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e491bb44.css",
-    "main.js": "/static/js/main.78c7ae50.js",
+    "main.css": "/static/css/main.d7984c4b.css",
+    "main.js": "/static/js/main.b163efe3.js",
     "static/js/787.93669362.chunk.js": "/static/js/787.93669362.chunk.js",
-    "static/media/news-video.mp4": "/static/media/news-video.fed6e5205f4e44321896.mp4",
+    "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
+    "static/media/InterTight-LightItalic.ttf": "/static/media/InterTight-LightItalic.429432f54331723125cb.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/InterTight-Regular.ttf": "/static/media/InterTight-Regular.0b4f9817d731764e0a9c.ttf",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
     "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Cantarell-Bold.ttf": "/static/media/Cantarell-Bold.2c4f1ee735df59c4cdeb.ttf",
     "index.html": "/index.html",
-    "main.e491bb44.css.map": "/static/css/main.e491bb44.css.map",
-    "main.78c7ae50.js.map": "/static/js/main.78c7ae50.js.map",
+    "main.d7984c4b.css.map": "/static/css/main.d7984c4b.css.map",
+    "main.b163efe3.js.map": "/static/js/main.b163efe3.js.map",
     "787.93669362.chunk.js.map": "/static/js/787.93669362.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e491bb44.css",
-    "static/js/main.78c7ae50.js"
+    "static/css/main.d7984c4b.css",
+    "static/js/main.b163efe3.js"
   ]
 }

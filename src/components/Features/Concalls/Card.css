@@ -2,8 +2,31 @@
     width: 418px;
 }
 
-.card input{
+.card input {
     position: absolute;
+    opacity: 0;
+}
+
+.tab_label {
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab_label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.1s;
+}
+
+.card input:checked+.tab_label::after {
+    transform: rotate(270deg);
 }
 
 .card-header {
@@ -15,22 +38,27 @@
     width: 45px;
     height: 45px;
 }
-.card #cb1:checked ~ .content-box1{
+
+.card #cb1:checked~.content-box1 {
     max-height: 304px;
 }
-.card #cb2:checked ~ .content-box2{
+
+.card #cb2:checked~.content-box2 {
     max-height: 304px;
 }
-.content-box1{
+
+.content-box1 {
     max-height: 0;
     overflow: hidden;
     transition: all 1s;
 }
-.content-box2{
+
+.content-box2 {
     max-height: 0;
     overflow: hidden;
     transition: all 0.7s;
 }
+
 .card-content {
     padding-bottom: 11px;
     padding-left: 16px;

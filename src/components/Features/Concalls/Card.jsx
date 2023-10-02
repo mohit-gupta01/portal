@@ -4,15 +4,6 @@ import salilParekh from './../../../assets/Concall-Images/SalilParekh.png';
 import './Card.css';
 
 const Card = ({ index }) => {
-    // const [isAccClicked, setAccClicked] = useState(true);
-    // const handleClick = (index) => {
-    //     if(index===0){
-    //         setAccClicked(true);
-    //     }
-    //     else if(index===1){
-    //         setAccClicked(false);
-    //     }
-    // }
     if (index === 0) {
         return (
             <div className="card">
@@ -57,14 +48,16 @@ const Card = ({ index }) => {
     else if (index === 1) {
         return (
             <div className="card">
-                <input type="checkbox" name="accordion-1" id="cb1"/>
-                <div className='card-header flex-row'>
-                    <img src={salilParekh} alt="" />
-                    <div className='flex-col'>
-                        <span style={{ fontSize: '15px', color: '#DDDDDD' }}>Salil Parekh</span>
-                        <span style={{ fontSize: '14.25px', color: '#AAAAAA' }}>MD & CEO</span>
+                <input type="checkbox" name="accordion-1" id="cb1" />
+                <label htmlFor="cb1" className='tab_label'>
+                    <div className='card-header flex-row'>
+                        <img src={salilParekh} alt="" />
+                        <div className='flex-col'>
+                            <span style={{ fontSize: '15px', color: '#DDDDDD' }}>Salil Parekh</span>
+                            <span style={{ fontSize: '14.25px', color: '#AAAAAA' }}>MD & CEO</span>
+                        </div>
                     </div>
-                </div>
+                </label>
                 <div className='content-box1'>
                     <div className='card-content flex-col'>
                         <span style={{ color: '#CCCCCC', fontFamily: 'Inter-Medium' }}>Outlook:</span>
@@ -101,14 +94,16 @@ const Card = ({ index }) => {
                         </div>
                     </div>
                 </div>
-                <input type="checkbox" name="accordion-2" id="cb2"/>
-                <div className='card-header flex-row'>
-                    <img src={nilanjanRoy} alt="" />
-                    <div className='flex-col'>
-                        <span style={{ fontSize: '15px', color: '#DDDDDD' }}>Nilanjan Roy</span>
-                        <span style={{ fontSize: '14.25px', color: '#AAAAAA' }}>CFO</span>
+                <input type="checkbox" name="accordion-2" id="cb2" />
+                <label htmlFor="cb2" className='tab_label'>
+                    <div className='card-header flex-row'>
+                        <img src={nilanjanRoy} alt="" />
+                        <div className='flex-col'>
+                            <span style={{ fontSize: '15px', color: '#DDDDDD' }}>Nilanjan Roy</span>
+                            <span style={{ fontSize: '14.25px', color: '#AAAAAA' }}>CFO</span>
+                        </div>
                     </div>
-                </div>
+                </label>
                 <div className='content-box2'>
                     <div className='card-content flex-col'>
                         <span style={{ color: '#CCCCCC', fontFamily: 'Inter-Medium' }}>Reasons</span>

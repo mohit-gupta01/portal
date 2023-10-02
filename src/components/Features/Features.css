@@ -3,19 +3,24 @@
     top: -10px;
     height: 390px;
     background: linear-gradient(to bottom, #03213B, #000101);
-    transition: opacity 0.2s ease;
+    transition: opacity 0.4s;
     opacity: 0;
 }
 
-.fade-in {
+.fade-in{
     opacity: 1;
-    /* When isVisible is true, make it visible */
 }
 
+.features-section{
+    padding-top: 80px;
+}
+
+.features-body{
+    animation: appear 0.3s linear;
+}
 .about {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
     text-align: center;
     align-items: center;
     color: #fff;
@@ -117,21 +122,41 @@
 /* About text with typewriter animation ends*/
 
 .vertical-line {
-    height: 1px;
+    height: 150px;
     background-color: #707070;
     width: 0.5px;
-    transition: height 0.5s;
-    transition-delay: 1s;
+    animation: line-animate 2.1s;
 }
 
-.vertical-line-after {
-    height: 150px;
+@keyframes line-animate {
+    0%{
+        height: 1px;
+    }
+    75%{
+        height: 1px;
+    }
+    100% {
+        height: 150px;
+    }
 }
 
 /* Get a feel try it now styles */
 .exclusive {
     align-items: center;
     padding-top: 22px;
+    opacity: 1;
+    animation: exclusive-appear 2.4s;
+}
+@keyframes exclusive-appear {
+    0%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .feel-text {

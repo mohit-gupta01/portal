@@ -21,7 +21,7 @@ const Features = () => {
         };
 
         const handleScroll = () => {
-            const element = document.querySelector('.about-text');
+            const element = document.querySelector('.features-section');
             if (element && isInViewport(element)) {
                 setIsVisible(true);
             }
@@ -41,28 +41,32 @@ const Features = () => {
 
     return (
         <div className={`gradient-background ${isBannerVisible ? 'fade-in' : ''}`}>
-            <div className='about'>
-                <div className='fade_rule'></div>
-                <div className="heading-container text">
-                    With <h1 className="brand-heading text">MARKETRACK</h1>
-                </div>
-                <div className='text about-text'>
-                    <span className={`pr-20 ${isVisible ? 'typewriter' : 'invisible'}`}>Leave Complexity Behind with Just One Click</span><BiSolidPointer
-                        className={`${isVisible ? 'pointer' : 'invisible'}`} />
-                </div>
-                <div className={`vertical-line ${isVisible ? 'vertical-line-after' : ""}`}></div>
-                <div className='exclusive flex-col'>
-                    <div className='flex-row'>
-                        <p className='feel-text'>Get a Feel. Try it Out Now</p>
-                        <ArrowSvg />
+            <div className='features-section'>
+            <div className='fade_rule'></div>
+                {isVisible && <div className='features-body'>
+                    <div className='about'>
+                        <div className="heading-container text">
+                            With <h1 className="brand-heading text">MARKETRACK</h1>
+                        </div>
+                        <div className='text about-text'>
+                            <span className={`pr-20 ${isVisible ? 'typewriter' : 'invisible'}`}>Leave Complexity Behind with Just One Click</span><BiSolidPointer
+                                className={`${isVisible ? 'pointer' : 'invisible'}`} />
+                        </div>
+                        <div className='vertical-line'></div>
+                        <div className='exclusive flex-col'>
+                            <div className='flex-row'>
+                                <p className='feel-text'>Get a Feel. Try it Out Now</p>
+                                <ArrowSvg />
+                            </div>
+                            <div className='flex-row' style={{ alignItems: "center", paddingRight: '20px', paddingBottom: '5px' }}>
+                                <span className="exclusive-brand-heading">MARKETRACK</span>
+                                <ToggleButton />
+                            </div>
+                        </div>
                     </div>
-                    <div className='flex-row' style={{ alignItems: "center", paddingRight: '20px', paddingBottom: '5px' }}>
-                        <span className="exclusive-brand-heading">MARKETRACK</span>
-                        <ToggleButton />
-                    </div>
-                </div>
+                    <FeaturesSection />
+                </div>}
             </div>
-            <FeaturesSection />
         </div>
     );
 }

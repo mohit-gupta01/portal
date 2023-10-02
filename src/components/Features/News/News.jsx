@@ -9,10 +9,11 @@ const News = () => {
     const { isChecked } = useStateContext();
     const newsRef = useRef(null);
     useEffect(() => {
+
         if (isChecked) {
             newsRef.current.setDirection(1);
             newsRef.current.setSpeed(1);
-            newsRef.current.goToAndPlay(0, false);
+            newsRef.current.play();
         }
         else if (isChecked === false) {
             newsRef.current.pause();

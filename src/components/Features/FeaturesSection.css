@@ -24,6 +24,7 @@
     width: 633px;
     background-color: #151515;
     border-radius: 7.5px;
+    transition: all 0.2s;
 }
 
 .corporate-section {
@@ -38,4 +39,20 @@
     height: 370px;
     background-color: #151515;
     border-radius: 7.5px;
+    
+}
+
+.features-animate{
+    animation: features-fadeIn 3s;
+}
+@keyframes features-fadeIn {
+    0%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

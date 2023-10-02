@@ -1,4 +1,6 @@
-
+/* .concall{
+    
+} */
 .concall-heading {
     display: flex;
     justify-content: center;
@@ -11,7 +13,9 @@
     font-size: 30px;
     font-weight: 400;
 }
-
+.concall-body{
+    transition: all 0.3s;
+}
 /* CSS for toggle button off state - Starts*/
 
 .concall-body-off {
@@ -21,6 +25,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    animation: appear 1s;
 }
 
 .infosys-header-off {
@@ -42,14 +47,16 @@
 
 /* CSS for toggle button - ON state */
 
-.concall-body {
+.concall-body-on {
     margin-bottom: 15px;
     align-items: center;
+    animation: appear 1s;
 }
 
 .concall-carousel {
     background-color: #222222;
     border-radius: 7.5px;
+    transition: all 0.2s;
 }
 
 .headermask {
@@ -113,7 +120,6 @@
 /* Carousel card css starts */
 
 .card-container {
-    padding: 12px 0;
     display: flex;
     margin-left: 44px;
 }
