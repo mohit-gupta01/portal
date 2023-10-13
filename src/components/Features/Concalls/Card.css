@@ -50,13 +50,13 @@
 .content-box1 {
     max-height: 0;
     overflow: hidden;
-    transition: all 1s;
+    transition: all 0.4s;
 }
 
 .content-box2 {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.7s;
+    transition: all 0.4s;
 }
 
 .card-content {

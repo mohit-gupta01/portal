@@ -107,7 +107,7 @@
     cursor: pointer;
     font-size: 15px;
     font-family: 'InterTight-Regular';
-    transition: all 0.2s;
+    transition: all 0.4s;
 }
 
 .button-active {
@@ -125,23 +125,22 @@
 }
 
 .carousel-dots {
-    text-align: center;
-    margin-top: 10px;
+    position: relative;
+    bottom: 18.5px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-    color: #2BC1FF;
-    background-color: white;
-    margin: 0 5px;
+    width: 7.5px;
+    height: 7.5px;
+    margin: 0 2px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.dot-active {
-    background-color: blue;
-}
 
 .concall-footer{
     position: absolute;

@@ -1,16 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import News from './News/News';
 import Concalls from './Concalls/Concalls';
 import CorporateFillings from './CorporateFillings/CorporateFillings';
 import './FeaturesSection.css';
 import { useStateContext } from '../../context/StateContext';
 
+
 const FeaturesSection = () => {
-    const { isChecked } = useStateContext();
+    const { isChecked, istriggered, setTriggered } = useStateContext();
+
+    const handleScroll = () => {
+        const element = document.getElementById('trigger-features');
+        const elementPosition = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight + 250;
+        console.log(windowHeight);
+        console.log(elementPosition.bottom);
+        const triggerPoint = windowHeight;
+
+        if (elementPosition.bottom <= triggerPoint) {
+            setTriggered(true);
+        } else {
+            setTriggered(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    });
+
     return (
         <div>
-            <div className='features-container'>
-                <div className="features-animate flex-row jcCenter">
+            <div className='features-container' id='trigger-features'>
+                <div className="features-animate flex-row jcCenter" style={{opacity: istriggered?1:0}}>
                     <div className="flex-col" style={{ gap: '22px' }}>
                         <div className="flex-row">
                             <div className='news-section'><News /></div>
@@ -21,7 +45,7 @@ const FeaturesSection = () => {
                     </div>
                     <div className="flex-col" style={{ gap: '22px' }}>
                         <div className="flex-row">
-                            <div className='concall-section' style={{ height:isChecked?'815px':'609px' }}>
+                            <div className='concall-section' style={{ height: isChecked ? '815px' : '609px' }}>
                                 <Concalls />
                             </div>
                         </div>
@@ -36,4 +60,4 @@ const FeaturesSection = () => {
     )
 }
 
-export default FeaturesSection
+export default FeaturesSection;

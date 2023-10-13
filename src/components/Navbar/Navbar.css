@@ -1,7 +1,21 @@
+nav {
+    height: 80px;
+    transition: all 0.2s ease-in;
+}
+
+.inactive {
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
 .navbar {
     height: 80px;
     padding-left: 28.5px;
     display: flex;
+    position: absolute;
 }
 
 .header {
@@ -88,33 +102,89 @@
     }
 }
 
+/* Sticky navbar styles */
+
 .navbar-2 {
+    position: fixed;
     height: 80px;
-    padding-left: 28.5px;
+    width: 100%;
+    /* padding-left: 28.5px; */
     display: flex;
+    z-index: 2;
+    background: transparent;
+    backdrop-filter: blur(50px);
 }
 .navbar-mask{
+    position: absolute;
+    width: 100%;
     height: 80px;
-    position: absolute;
-    background: inherit;
-    filter: blur(10px);
-    z-index: -1;
+    background-color: #fff;
+    opacity: 10%;
 }
-.nav-email-form{
-    position: absolute;
-    height: 48px;
-    width: 230px;
-    background-color: #278AFF;
-    border-radius: 50px;
+.nav-email-form {
+    position: fixed;
     right: 29px;
     top: 19px;
+    height: 48px;
+    width: 230px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.email-default-state {
+    height: 48px;
+    width: 230px;
+    border-radius: 50px;
+    background-color: #278AFF;
     color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.nav-email-text{
+
+.nav-email-text {
     padding-left: 16px;
     font-family: 'Poppins-SemiBold';
     font-size: 16.5px;
+}
+
+.email-hover-state {
+    background-color: #444444;
+    height: 48px;
+    width: 211px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.email-hover-state input {
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 140px;
+    padding: 5px 10px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 16.5px;
+    margin-right: 6px;
+}
+
+.email-hover-state input::placeholder {
+    color: #CCCCCC;
+}
+
+.email-hover-state input:focus {
+    border: none;
+}
+
+.email-arrow-button{
+    background-color: #278AFF;
+    border-radius: 37.5px;
+    height: 37.5px;
+    width: 37.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }

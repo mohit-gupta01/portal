@@ -2,8 +2,15 @@ import React from 'react';
 import nilanjanRoy from './../../../assets/Concall-Images/NilanjanRoy.png';
 import salilParekh from './../../../assets/Concall-Images/SalilParekh.png';
 import './Card.css';
+import { useStateContext } from '../../../context/StateContext';
+
 
 const Card = ({ index }) => {
+    const {isCardChecked, setCardChecked} = useStateContext();
+    const handleClick = () => {
+        setCardChecked(!isCardChecked);
+    }
+
     if (index === 0) {
         return (
             <div className="card">
@@ -48,8 +55,8 @@ const Card = ({ index }) => {
     else if (index === 1) {
         return (
             <div className="card">
-                <input type="checkbox" name="accordion-1" id="cb1" />
-                <label htmlFor="cb1" className='tab_label'>
+                <input type="checkbox" name="accordion-1" id="cb1" checked={isCardChecked} />
+                <label htmlFor="cb1" className='tab_label' onClick={handleClick}>
                     <div className='card-header flex-row'>
                         <img src={salilParekh} alt="" />
                         <div className='flex-col'>
@@ -94,8 +101,8 @@ const Card = ({ index }) => {
                         </div>
                     </div>
                 </div>
-                <input type="checkbox" name="accordion-2" id="cb2" />
-                <label htmlFor="cb2" className='tab_label'>
+                <input type="checkbox" name="accordion-2" id="cb2" checked={!isCardChecked} />
+                <label htmlFor="cb2" className='tab_label' onClick={handleClick}>
                     <div className='card-header flex-row'>
                         <img src={nilanjanRoy} alt="" />
                         <div className='flex-col'>

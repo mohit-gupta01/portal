@@ -16,7 +16,7 @@ const HeroBanner = () => {
         }, 1000);
     }, [setBannerVisible]);
     return (
-        <div className='banner'>
+        <div className='banner' id='trigger-element'>
             <HeroForm />
             <div className="animation-container ease-in-out">
                 <Lottie
@@ -26,7 +26,6 @@ const HeroBanner = () => {
                     loop={true}
                 />
             </div>
-
         </div>
     );
 }

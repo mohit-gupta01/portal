@@ -10,21 +10,21 @@ import ConcallAnimation from './../../../lotties/ConcallAnimation.json';
 
 
 const Concalls = () => {
-    const { isChecked, isVisible } = useStateContext();
+    const { isChecked, istriggered, isCardChecked, setCardChecked } = useStateContext();
     const totalSlides = 3;
     const [currentIndex, setCurrentIndex] = useState(3);
     const concallRef = useRef(null);
 
     useEffect(() => {
-        if(isChecked===false){
+        if (isChecked === false) {
             setCurrentIndex(3);
         }
-        if (isVisible) {
+        if (istriggered && !isChecked) {
             setTimeout(() => {
-                concallRef.current.play();
-            }, 3000);
+                concallRef.current.goToAndPlay(1, true);
+            }, 500);
         }
-    }, [isChecked, isVisible, setCurrentIndex]);
+    }, [isChecked, istriggered, setCurrentIndex]);
 
     const handleClick = (index) => {
         setCurrentIndex(index);
@@ -33,6 +33,7 @@ const Concalls = () => {
         document.getElementById('button2').classList.remove('button-active');
         const element = document.getElementById(`button${index}`);
         element.classList.add('button-active');
+        setCardChecked(false);
     }
 
     return (
@@ -62,7 +63,7 @@ const Concalls = () => {
                     </div>
                 }
                 {isChecked && <div className='concall-body-on flex-col'>
-                    <div className='concall-carousel' style={{ height: (currentIndex === 0) ? '530px' : (currentIndex === 1) ? '608px' : '593px' }}>
+                    <div className='concall-carousel' style={{ height: (currentIndex === 0) ? '530px' : ((currentIndex===1)&&!isCardChecked) ?'473px': ((currentIndex===1)&&isCardChecked) ?'608px' : '593px' }}>
                         <div className="headermask"></div>
                         <div className='infosys-header'>
                             <img src={infosys} alt="" height={'60px'} style={{ marginLeft: '108px' }} />
@@ -81,11 +82,12 @@ const Concalls = () => {
 
                         <div className="carousel-dots">
                             {Array(totalSlides).fill(0).map((_, index) => (
-                                <span
+                                <div
                                     key={index}
-                                    className={`dot ${index === currentIndex ? 'dot-active' : ''}`}
-                                    onClick={() => handleClick(index)}
-                                ></span>
+                                    className='dot'
+                                    style={{backgroundColor: index===currentIndex?'#0090FF':'#555555'}}
+                                    onClick={() => { handleClick(index); }}
+                                ></div>
                             ))}
                         </div>
                     </div>
