@@ -47,14 +47,14 @@ const Navbar = () => {
       <div className={`navbar-2 ${triggered ? 'active' : "inactive"}`}>
         <div className="navbar-mask"></div>
         <div className="header">
-          <div className="heading-container" style={{paddingLeft: '28.5px'}}>
+          <div className="heading-container" style={{ paddingLeft: '28.5px' }}>
             <h1 className="underlined-heading">MARKETRACK</h1>
           </div>
           <div className='announcement-heading'>
             <span className="fade-text b1">Product Announcement</span>
             <span className="fade-text b2">Coming Soon</span>
           </div>
-          <div className='nav-email-form' onMouseEnter={() => { setEmailHoverState(true); }}>
+          <div className='nav-email-form' onMouseEnter={() => { setEmailHoverState(true); }} onMouseLeave={() => { setEmailHoverState(false); setNavbarEmailFocus(false); }}>
             {isEmailHover ? <div className="email-hover-state">
               <input type="email" placeholder={isNavbarEmailFocused ? '' : 'Enter Your Email'} onFocus={handleNavbarEmailFocus} onBlur={() => { setNavbarEmailFocus(false) }} />
               <span className='email-arrow-button'>
