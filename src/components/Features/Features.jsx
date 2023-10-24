@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef, useState, useEffect } from 'react';
 import { BiSolidPointer } from 'react-icons/bi';
 import './Features.css';
 import { useStateContext } from '../../context/StateContext';
@@ -14,6 +14,26 @@ const Features = () => {
     const { isBannerVisible } = useStateContext();
     const el = useRef();
     const tl = useRef();
+    const [isTypingTriggered, setTypingTriggered] = useState(false);
+    const handleScroll = () => {
+        const element = document.getElementById('typing-trigger');
+        const elementPosition = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight-150;
+        const triggerPoint = windowHeight;
+
+        if (elementPosition.bottom <= triggerPoint) {
+            setTypingTriggered(true);
+        } else {
+            setTypingTriggered(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    });
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
@@ -26,10 +46,6 @@ const Features = () => {
                 }
             })
                 .to(".box1", {
-                    opacity: 1,
-                    ease: 'power2.in',
-                })
-                .to(".box2", {
                     opacity: 1,
                     ease: 'power2.in',
                 })
@@ -56,9 +72,9 @@ const Features = () => {
                         <div className="heading-container text box1">
                             With <h1 className="brand-heading text">MARKETRACK</h1>
                         </div>
-                        <div className='text about-text box2'>
-                            <span className='pr-20 typewriter'>Leave Complexity Behind with Just One Click</span><BiSolidPointer
-                                className='pointer' />
+                        <div className='text about-text' id='typing-trigger' style={{opacity: isTypingTriggered?'1':'0'}}>
+                            {isTypingTriggered && <span className='pr-20 typewriter'>Leave Complexity Behind with Just One Click</span>}
+                            {isTypingTriggered && <BiSolidPointer className='pointer' />}
                         </div>
                         <div className='vertical-line'></div>
                         <div className='exclusive flex-col box4'>

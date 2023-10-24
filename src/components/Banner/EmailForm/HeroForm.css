@@ -6,10 +6,9 @@
     margin: auto auto;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     font-size: 16.5px;
     opacity: 0;
-    animation: fade-in 4s forwards;
+    animation: fade-in 3s forwards;
     animation-delay: 4.5s;
     transition: height 0.1s;
 }

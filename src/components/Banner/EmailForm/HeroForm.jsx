@@ -12,7 +12,7 @@ if (!firebase.apps.length) {
 }
 
 
-const HeroForm = () => {
+const HeroForm = ({fontSize}) => {
     const [isInputFocused, setInputFocused] = useState(false);
     const [isFormSubmitted, setFormSubmitted] = useState(false);
     const [isEmptyError, setEmptyError] = useState(false);
@@ -104,8 +104,8 @@ const HeroForm = () => {
 
 
     return (
-        <div className={`hero-form ${(isAlreadyRegistered || isSuccess) && 'height-after'}`}>
-            <span className='hero-form-heading' style={{ display: isAlreadyRegistered ? 'none' : 'inherit' }}>Enjoy Early Exclusive Benefits, Absolutely Free!</span>
+        <div className={`hero-form ${(isAlreadyRegistered || isSuccess) && 'height-after'}`} >
+            <span className='hero-form-heading' style={{ display: isAlreadyRegistered ? 'none' : 'inherit' , fontSize: fontSize}}>Enjoy Early Exclusive Benefits, Absolutely Free!</span>
             {!(isAlreadyRegistered || isSuccess) && <div className={`hero-form-input ${invalidEmailClass} ${animateWidth}`}>
                 <input
                     type="email"

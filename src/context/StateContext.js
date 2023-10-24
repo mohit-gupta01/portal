@@ -8,10 +8,11 @@ export const StateContext = ({ children }) => {
     const [isBannerVisible, setBannerVisible] = useState(false);
     const [istriggered, setTriggered] = useState(false);
     const [isCardChecked, setCardChecked] = useState(false);
+    const [isGridTriggered, setGridTriggered] = useState(false);
 
     return (
         <Context.Provider value={{
-            isVisible, isChecked, isBannerVisible, istriggered, isCardChecked, setCardChecked, setTriggered, setIsVisible, setChecked, setBannerVisible
+            isVisible, isChecked, isBannerVisible, istriggered, isCardChecked, isGridTriggered, setGridTriggered, setCardChecked, setTriggered, setIsVisible, setChecked, setBannerVisible
         }}>
             {children}
         </Context.Provider>

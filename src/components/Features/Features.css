@@ -53,10 +53,12 @@
 }
 
 .about .about-text {
+    height: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-family: 'Poppins-Regular';
+    transition: opacity 0.5s ease;
 }
 
 /* Heading Container CSS */
