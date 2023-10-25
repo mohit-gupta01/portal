@@ -11,8 +11,8 @@
     padding-top: 35px;
 }
 
-.appearIn{
-    transition: all 1s ease;
+.appearIn {
+    animation: appear 1s forwards;
 }
 
 /* News section css */
@@ -41,7 +41,7 @@
 
 .forensic-section {
     width: 625px;
-    height: 370px;
+    height: 460px;
     background-color: #151515;
     border-radius: 7.5px;
 }
@@ -86,7 +86,7 @@
     }
 }
 
-.grid-show{
+.grid-show {
     opacity: 1;
     animation: scaleOut2 4s forwards;
 }
@@ -106,7 +106,8 @@
         font-size: 90px;
         opacity: 1;
     }
-    100%{
+
+    100% {
         scale: 1;
         font-size: 26px;
         opacity: 0;

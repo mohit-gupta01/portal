@@ -20,7 +20,7 @@ const FeaturesSection = () => {
         const element = document.getElementById('trigger-features');
         const elementPosition = element.getBoundingClientRect();
         const windowHeight = window.innerHeight + 250;
-        const windowHeight2 = window.innerHeight - 550;
+        const windowHeight2 = window.innerHeight - 650;
         const bottomHeight = window.innerHeight;
 
         if (elementPosition.bottom <= windowHeight) {
@@ -42,7 +42,7 @@ const FeaturesSection = () => {
             setGridTriggered(false);
             setFinalGridState(false);
         }
-        if (elementPosition.bottom > windowHeight2 + 500) {
+        if (elementPosition.bottom > windowHeight2 + 700) {
             if (isBottomReached) {
                 setReverseAnimate(true);
                 setScrollLock(true);
@@ -75,7 +75,7 @@ const FeaturesSection = () => {
         else {
             setFinalGridState(false);
         }
-    });
+    }, [isGridTriggered, setFinalGridState]);
 
     return (
         <div>

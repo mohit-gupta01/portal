@@ -17,7 +17,7 @@ const HeroBanner = () => {
     }, [setBannerVisible]);
     return (
         <div className='banner' id='trigger-element'>
-            <HeroForm fontSize={'16.5px'}/>
+            <HeroForm fontSize={'16.5px'} animationTime={'4.5s'}/>
             <div className="animation-container ease-in-out">
                 <Lottie
                     lottieRef={lottieRef}

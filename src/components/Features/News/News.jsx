@@ -9,10 +9,10 @@ const News = () => {
     const { isChecked, istriggered } = useStateContext();
     const newsRef = useRef(null);
     useEffect(() => {
-        if(istriggered && !isChecked){
+        if (istriggered && !isChecked) {
             setTimeout(() => {
                 newsRef.current.setSpeed(0.7);
-                newsRef.current.playSegments([1,200], true);
+                newsRef.current.playSegments([1, 200], true);
             }, 100);
         }
         else if (isChecked) {

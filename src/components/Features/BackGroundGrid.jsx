@@ -30,7 +30,7 @@ const BackGroundGrid = () => {
                 <span>Leave Complexity Behind.</span>
             </div>
             <div className='grid-email'>
-                <HeroForm fontSize={'22.5px'} />
+                <HeroForm fontSize={'22.5px'} textColor={'#A5FF95'} animationTime={'2.5s'}/>
             </div>
         </div>
     );

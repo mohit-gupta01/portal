@@ -12,7 +12,7 @@ if (!firebase.apps.length) {
 }
 
 
-const HeroForm = ({fontSize}) => {
+const HeroForm = ({fontSize, textColor, animationTime}) => {
     const [isInputFocused, setInputFocused] = useState(false);
     const [isFormSubmitted, setFormSubmitted] = useState(false);
     const [isEmptyError, setEmptyError] = useState(false);
@@ -104,8 +104,8 @@ const HeroForm = ({fontSize}) => {
 
 
     return (
-        <div className={`hero-form ${(isAlreadyRegistered || isSuccess) && 'height-after'}`} >
-            <span className='hero-form-heading' style={{ display: isAlreadyRegistered ? 'none' : 'inherit' , fontSize: fontSize}}>Enjoy Early Exclusive Benefits, Absolutely Free!</span>
+        <div className={`hero-form ${(isAlreadyRegistered || isSuccess) && 'height-after'}`} style={{'--at': animationTime}}>
+            <span className='hero-form-heading' style={{ display: isAlreadyRegistered ? 'none' : 'inherit' , fontSize: fontSize}}>Enjoy Early Exclusive Benefits,<span style={{color: textColor}}>&nbsp;Absolutely Free!</span></span>
             {!(isAlreadyRegistered || isSuccess) && <div className={`hero-form-input ${invalidEmailClass} ${animateWidth}`}>
                 <input
                     type="email"
@@ -146,7 +146,7 @@ const HeroForm = ({fontSize}) => {
             {!isEmptyError && !isInvalidError &&<span className='error-message' style={{ fontFamily: 'Poppins', fontWeight: '500', fontSize: '15px', textAlign: 'left', color: '#aaa' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="15.141" height="11.595" viewBox="0 0 15.141 11.595">
                     <path id="Icon_ionic-ios-checkmark" data-name="Icon ionic-ios-checkmark" d="M25.5,13.563l-1.237-1.273a.266.266,0,0,0-.2-.084h0a.255.255,0,0,0-.2.084l-8.578,8.641L12.164,17.81a.272.272,0,0,0-.394,0l-1.252,1.252a.28.28,0,0,0,0,.4L14.456,23.4a1.245,1.245,0,0,0,.823.4,1.3,1.3,0,0,0,.816-.387H16.1l9.4-9.45A.3.3,0,0,0,25.5,13.563Z" transform="translate(-10.434 -12.206)" fill="#aaa" />
-                </svg><span style={{paddingLeft: '6px'}}>No Spam Ever, Our Promise</span>
+                </svg><span style={{paddingLeft: '6px', color: textColor}}>No Spam Ever, Our Promise</span>
             </span>}
             {isEmptyError && <span className='error-message'>{emptyErrorMessages[Math.floor(Math.random() * emptyErrorMessages.length)]}</span>}
             {isInvalidError && <span className='error-message'>{invalidErrorMessages[Math.floor(Math.random() * invalidErrorMessages.length)]}</span>}

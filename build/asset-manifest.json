@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.5833ad34.css",
-    "main.js": "/static/js/main.1a20c81d.js",
+    "main.css": "/static/css/main.4182d29a.css",
+    "main.js": "/static/js/main.af23cfd6.js",
     "static/js/787.93669362.chunk.js": "/static/js/787.93669362.chunk.js",
+    "static/media/ForensicScrutiny.mp4": "/static/media/ForensicScrutiny.965a0a860b317eccc112.mp4",
     "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
     "static/media/InterTight-LightItalic.ttf": "/static/media/InterTight-LightItalic.429432f54331723125cb.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
@@ -12,12 +13,12 @@
     "static/media/Poppins-SemiBold.ttf": "/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Cantarell-Bold.ttf": "/static/media/Cantarell-Bold.2c4f1ee735df59c4cdeb.ttf",
     "index.html": "/index.html",
-    "main.5833ad34.css.map": "/static/css/main.5833ad34.css.map",
-    "main.1a20c81d.js.map": "/static/js/main.1a20c81d.js.map",
+    "main.4182d29a.css.map": "/static/css/main.4182d29a.css.map",
+    "main.af23cfd6.js.map": "/static/js/main.af23cfd6.js.map",
     "787.93669362.chunk.js.map": "/static/js/787.93669362.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5833ad34.css",
-    "static/js/main.1a20c81d.js"
+    "static/css/main.4182d29a.css",
+    "static/js/main.af23cfd6.js"
   ]
 }

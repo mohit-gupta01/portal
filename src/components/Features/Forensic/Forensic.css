@@ -1,10 +1,18 @@
-.forensic{
+.forensic {
     font-family: 'Poppins-Regular';
     font-size: 30px;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin: 23px;
 }
-.forensic-heading{
+
+.forensic-heading {
     margin-bottom: 30px;
+}
+
+.forensic-video {
+    margin-top: 20px;
+    align-items: center;
 }

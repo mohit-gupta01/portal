@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav>
       <div className={`navbar ${triggered ? 'inactive' : "active"}`}>
         <div className="header">
-          <div className="heading-container">
+          <div className="heading-container" style={{ paddingLeft: '28.5px' }}>
             <h1 className="underlined-heading">MARKETRACK</h1>
           </div>
           <div className='announcement-heading'>
@@ -57,15 +57,18 @@ const Navbar = () => {
             <span className="fade-text b2">Coming Soon</span>
           </div>
           <div className='nav-email-form' onMouseEnter={() => { setEmailHoverState(true); }} onMouseLeave={() => { setEmailHoverState(false); setNavbarEmailFocus(false); }} style={{ opacity: isGridTriggered ? '0' : '1' }}>
-            <div className={isEmailHover ? 'email-hover-state' : "email-default-state"}>
-              {isEmailHover && <input type="email" placeholder={isNavbarEmailFocused ? '' : 'Enter Your Email'} onFocus={handleNavbarEmailFocus} onBlur={() => { setNavbarEmailFocus(false) }} />}
-              <div className={isEmailHover ? 'email-arrow-button' : 'nav-email-text'}>
-                {isEmailHover ? <PiArrowElbowDownLeftBold style={{ color: 'black', width: '15px' }} /> : <span>Get Exclusive Benifits</span>}
-                {!isEmailHover && <div style={{ paddingLeft: '6px' }}>
-                  <GiftSvg />
-                </div>}
+            {isEmailHover ? <div className="email-hover-state">
+              <input type="email" placeholder={isNavbarEmailFocused ? '' : 'Enter Your Email'} onFocus={handleNavbarEmailFocus} onBlur={() => { setNavbarEmailFocus(false) }} />
+              <span className='email-arrow-button'>
+                <PiArrowElbowDownLeftBold style={{ color: 'black', width: '15px' }} />
+              </span>
+            </div> : <div className="email-default-state">
+              <span className='nav-email-text'>Get Exclusive Benefits</span>
+              <div style={{ paddingLeft: '6px' }}>
+                <GiftSvg />
               </div>
             </div>
+            }
           </div>
         </div>
       </div>
