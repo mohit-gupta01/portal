@@ -82,7 +82,7 @@ const Features = () => {
                                 <p className='feel-text'>Get a Feel. Try it Out Now</p>
                                 <ArrowSvg />
                             </div>
-                            <div className='flex-row' style={{ alignItems: "center", paddingRight: '20px', paddingBottom: '5px' }}>
+                            <div className='flex-row' style={{ alignItems: "center", paddingRight: '20px', paddingBottom: '5px', zIndex: '1' }}>
                                 <span className="exclusive-brand-heading">MARKETRACK</span>
                                 <ToggleButton />
                             </div>

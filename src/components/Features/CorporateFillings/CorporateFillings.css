@@ -21,6 +21,11 @@
     font-weight: 400;
 }
 
-.corporate-video{
-    width: 694px;
+.corporate-lottie{
+    animation: lottieScaleIn 1s forwards 9s;
+}
+@keyframes lottieScaleIn {
+    100%{
+        scale: 0;
+    }
 }

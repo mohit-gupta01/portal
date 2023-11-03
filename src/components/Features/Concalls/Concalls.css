@@ -1,6 +1,6 @@
-/* .concall{
-    
-} */
+.concall{
+    position: relative;
+}
 .concall-heading {
     display: flex;
     justify-content: center;
@@ -14,7 +14,15 @@
     font-weight: 400;
 }
 .concall-body{
+    margin: auto;
     transition: all 0.3s;
+    animation: concallScaleIn 1s forwards 9s;
+}
+
+@keyframes concallScaleIn {
+    100%{
+        scale: 0;
+    }
 }
 /* CSS for toggle button off state - Starts*/
 
@@ -73,7 +81,7 @@
     flex-direction: row;
     align-items: center;
     position: absolute;
-    top: 120px;
+    top: 65px;
     height: 70px;
 }
 
@@ -145,7 +153,7 @@
 .concall-footer{
     position: absolute;
     align-items: center;
-    top: 742px;
+    top: 680px;
     gap: 5px;
 }
 

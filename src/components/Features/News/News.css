@@ -1,9 +1,11 @@
 .news{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
+
 
 .news-heading{
     display: flex;
@@ -24,5 +26,12 @@
 
 .news-lottie{
     position: absolute;
-    top: 5px;
+    width: 800px;
+    animation: lottieScaleIn 1s forwards 8s;
+}
+
+@keyframes lottieScaleIn {
+    100%{
+        scale: 0;
+    }
 }

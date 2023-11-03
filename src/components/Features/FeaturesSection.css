@@ -1,162 +1,194 @@
-/* Features sections css start */
-.features-container {
-    position: relative;
-    height: 500px;
-    transition: all 1s ease;
-}
-
-.jcCenter {
+.center-mask {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 22px;
-    padding-top: 35px;
+    animation: LastAnimation 10s forwards 10s;
 }
 
-.appearIn {
-    animation: appear 1s forwards;
+@keyframes LastAnimation {
+    0%{
+        overflow: visible;
+    }
+    20%{
+        overflow: visible;
+        padding-top: 150px;
+    }
+    100%{
+        overflow: hidden;
+        padding-top: 0;
+    }
 }
 
-/* News section css */
+.grid-container {
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(30, 625px);
+    gap: 27px;
+    grid-template-rows: repeat(10, minmax(550px, auto));
+    animation: scaleIn 10s forwards 12s;
+}
+
+@keyframes scaleIn {
+    0% {
+        scale: 1;
+        gap: 20px;
+    }
+
+    25% {
+        scale: 1;
+        gap: 20px;
+    }
+
+    55% {
+        scale: 0.3;
+        gap: 40px;
+    }
+
+    65% {
+        scale: 0.3;
+        gap: 40px;
+    }
+
+    100% {
+        scale: 0.1;
+        gap: 60px;
+    }
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 625px;
+    height: 550px;
+    background-color: #222222;
+    opacity: 0;
+    animation: gridHide 20s forwards;
+}
+
+@keyframes gridHide {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        border-radius: 70px;
+    }
+}
+
+/* .initial-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 500px;
+    height: 500px;
+    background-color: #151515;
+    border-radius: 15px;
+} */
+
 .news-section {
     width: 625px;
     height: 500px;
-    background-color: #151515;
+    background-color: #222222;
     border-radius: 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: newsAnimate 12s forwards 10s;
 }
 
-/* News section css ends */
+@keyframes newsAnimate {
+    10% {
+        align-items: center;
+        height: 550px;
+        width: 625px;
+    }
+    100%{
+        align-items: center;
+        height: 550px;
+        width: 625px;
+        border-radius: 70px;
+    }
+}
 
 .concall-section {
-    width: 633px;
-    background-color: #151515;
+    width: 625px;
+    height: 609px;
+    background-color: #222222;
     border-radius: 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     transition: all 0.2s;
+    animation: concallAnimate 12s forwards 10s;
+}
+
+@keyframes concallAnimate {
+    10% {
+        align-items: center;
+        height: 550px;
+        width: 625px;
+    }
+    100%{
+        align-items: center;
+        height: 550px;
+        width: 625px;
+        border-radius: 70px;
+    }
 }
 
 .corporate-section {
+    position: relative;
     width: 625px;
-    height: 566px;
-    background-color: #151515;
+    height: 550px;
+    background-color: #222222;
     border-radius: 7.5px;
+    animation: corporateAnimate 12s forwards 10s;
+}
+
+@keyframes corporateAnimate {
+    10% {
+        align-items: center;
+        height: 550px;
+        width: 625px;
+        top: 0;
+    }
+    100%{
+        align-items: center;
+        height: 550px;
+        width: 625px;
+        top: 0;
+        border-radius: 70px;
+    }
 }
 
 .forensic-section {
     width: 625px;
     height: 460px;
-    background-color: #151515;
+    background-color: #222222;
     border-radius: 7.5px;
+    animation: forensicAnimate 12s forwards 10s;
 }
 
-.features-animate {
-    padding-bottom: 100px;
-    transition: opacity 0.6s;
-}
-
-.grid-container {
-    position: absolute;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8, 615px);
-    height: 50px;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    animation: grid-animate 3s forwards;
-    transition: all 2s ease-in;
-    background-color: #000000;
-}
-
-.grid-hide {
-    opacity: 0;
-    animation: scaleIn2 2s forwards;
-}
-
-@keyframes scaleIn2 {
-    0% {
-        scale: 0.29;
-        font-size: 90px;
+@keyframes forensicAnimate {
+    10% {
+        align-items: center;
+        height: 550px;
+        width: 625px;
     }
-
-    25% {
-        scale: 0.29;
-        font-size: 90px;
+    100%{
+        align-items: center;
+        height: 550px;
+        width: 625px;
+        border-radius: 70px;
     }
-
-    100% {
-        scale: 0.07;
-    }
-}
-
-.grid-show {
-    opacity: 1;
-    animation: scaleOut2 4s forwards;
-}
-
-@keyframes scaleOut2 {
-    0% {
-        scale: 0.07;
-    }
-
-    35% {
-        scale: 0.29;
-        font-size: 90px;
-    }
-
-    70% {
-        scale: 0.29;
-        font-size: 90px;
-        opacity: 1;
-    }
-
-    100% {
-        scale: 1;
-        font-size: 26px;
-        opacity: 0;
-    }
-}
-
-@keyframes grid-animate {
-    0% {
-        scale: 1;
-        font-size: 26px;
-    }
-
-    100% {
-        scale: 0.29;
-        font-size: 90px;
-    }
-}
-
-.blocks {
-    width: 600px;
-    height: 500px;
-    background-color: #151515;
-    border-radius: 10px;
-    text-align: center;
-    transition: scale 1s ease;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 120px;
-}
-
-.invisibility {
-    opacity: 0;
-}
-
-.skeleton-1 {
-    width: 130px;
-    height: 19px;
-    background-color: #777777;
-    border-radius: 4px;
-    transform: scale(3.5);
-}
-
-.skeleton-2 {
-    width: 90px;
-    height: 19px;
-    background-color: #777777;
-    border-radius: 4px;
-    transform: scale(3.5);
 }
