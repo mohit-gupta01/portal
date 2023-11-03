@@ -37,7 +37,7 @@ const Concalls = () => {
     }
 
     return (
-        <div className='concall'>
+        <div className='concall hide-everything'>
             <div className='concall-heading'>
                 <h1 className='concall-heading-text'>Conference Calls <BsFillTelephoneFill style={{ height: '20px' }} /></h1>
             </div>

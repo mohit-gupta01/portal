@@ -22,7 +22,7 @@ const CorporateFillings = () => {
         }
     })
     return (
-        <div className='corporate'>
+        <div className='corporate hide-everything'>
             <div className='corporate-heading'>
                 <h1 className='corporate-heading-text'>Corporate Filings</h1>
                 <img src={NSE} alt="" height={'30px'} style={{ marginTop: '5px' }} />

@@ -21,7 +21,7 @@ const News = () => {
         // }
     });
     return (
-        <div className='news'>
+        <div className='news hide-everything'>
             <div className='news-heading'>
                 <h1 className='news-heading-text'>
                     <span>News</span>

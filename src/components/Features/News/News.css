@@ -6,7 +6,6 @@
     gap: 5px;
 }
 
-
 .news-heading{
     display: flex;
     flex-direction: column;
@@ -27,11 +26,5 @@
 .news-lottie{
     position: absolute;
     width: 800px;
-    animation: lottieScaleIn 1s forwards 8s;
-}
-
-@keyframes lottieScaleIn {
-    100%{
-        scale: 0;
-    }
+    animation: lottieScaleIn 2s forwards 8s;
 }

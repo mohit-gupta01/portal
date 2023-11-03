@@ -1,6 +1,7 @@
-.concall{
+.concall {
     position: relative;
 }
+
 .concall-heading {
     display: flex;
     justify-content: center;
@@ -13,17 +14,12 @@
     font-size: 30px;
     font-weight: 400;
 }
-.concall-body{
-    margin: auto;
+
+.concall-body {
     transition: all 0.3s;
-    animation: concallScaleIn 1s forwards 9s;
+    animation: lottieScaleIn 2s forwards 9s;
 }
 
-@keyframes concallScaleIn {
-    100%{
-        scale: 0;
-    }
-}
 /* CSS for toggle button off state - Starts*/
 
 .concall-body-off {
@@ -44,7 +40,7 @@
     align-items: center;
 }
 
-.concall-lottie{
+.concall-lottie {
     position: relative;
     height: 233px;
     width: 506px;
@@ -62,6 +58,7 @@
 }
 
 .concall-carousel {
+    position: relative;
     background-color: #222222;
     border-radius: 7.5px;
     transition: all 0.2s;
@@ -81,7 +78,7 @@
     flex-direction: row;
     align-items: center;
     position: absolute;
-    top: 65px;
+    top: 0px;
     height: 70px;
 }
 
@@ -150,13 +147,13 @@
 }
 
 
-.concall-footer{
+.concall-footer {
     position: absolute;
     align-items: center;
     top: 680px;
     gap: 5px;
 }
 
-.blurred-text{
+.blurred-text {
     filter: blur(1.5px);
 }

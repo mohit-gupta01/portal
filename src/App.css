@@ -81,11 +81,20 @@ hr {
   padding: 10px 0;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
   flex-direction: row;
 }
-.flex-col{
+
+.flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.alignItems-center {
+  align-items: center;
 }

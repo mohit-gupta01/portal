@@ -7,7 +7,7 @@ const Forensic = () => {
     const forensicRef = useRef(null);
     return (
         <div>
-            <div className="forensic">
+            <div className="forensic hide-everything">
                 <div className="forensic-heading">
                     <span>Forensic Scrutiny</span>
                 </div>

@@ -22,10 +22,5 @@
 }
 
 .corporate-lottie{
-    animation: lottieScaleIn 1s forwards 9s;
-}
-@keyframes lottieScaleIn {
-    100%{
-        scale: 0;
-    }
+    animation: lottieScaleIn 2s forwards 9s;
 }
