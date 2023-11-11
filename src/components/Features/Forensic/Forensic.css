@@ -15,5 +15,5 @@
 .forensic-video {
     margin-top: 20px;
     align-items: center;
-    animation: lottieScaleIn 2s forwards 9s;
+    /* animation: lottieScaleIn 2s forwards 9s; */
 }

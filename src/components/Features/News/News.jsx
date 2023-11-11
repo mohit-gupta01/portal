@@ -1,24 +1,24 @@
 import React, { useEffect, useRef } from 'react';
 import './News.css';
-// import { useStateContext } from '../../../context/StateContext';
+import { useStateContext } from '../../../context/StateContext';
 import NewsAnimation from './../../../lotties/NewsAnimation.json';
 import { FaNewspaper } from 'react-icons/fa';
 import Lottie from "lottie-react";
 
 const News = () => {
-    // const { isChecked, istriggered } = useStateContext();
+    const { isChecked } = useStateContext();
     const newsRef = useRef(null);
     useEffect(() => {
-        // if (istriggered && !isChecked) {
-        //     setTimeout(() => {
-        //         newsRef.current.setSpeed(0.7);
-        //         newsRef.current.playSegments([1, 200], true);
-        //     }, 100);
-        // }
-        // else if (isChecked) {
-        //     newsRef.current.setSpeed(1);
-        //     newsRef.current.playSegments([200, 700], true);
-        // }
+        if (!isChecked) {
+            setTimeout(() => {
+                newsRef.current.setSpeed(0.8);
+                newsRef.current.playSegments([1, 200], true);
+            }, 100);
+        }
+        else if (isChecked) {
+            newsRef.current.setSpeed(1);
+            newsRef.current.playSegments([200, 700], true);
+        }
     });
     return (
         <div className='news hide-everything'>
@@ -32,8 +32,8 @@ const News = () => {
                 <Lottie
                     lottieRef={newsRef}
                     animationData={NewsAnimation}
-                    autoplay={true}
-                    loop={true}
+                    autoplay={false}
+                    loop={false}
                 />
             </div>
         </div>

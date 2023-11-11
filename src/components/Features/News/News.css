@@ -26,5 +26,5 @@
 .news-lottie{
     position: absolute;
     width: 800px;
-    animation: lottieScaleIn 2s forwards 8s;
+    /* animation: lottieScaleIn 2s forwards 8s; */
 }

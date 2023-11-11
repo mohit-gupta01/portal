@@ -17,7 +17,7 @@
 
 .concall-body {
     transition: all 0.3s;
-    animation: lottieScaleIn 2s forwards 9s;
+    /* animation: lottieScaleIn 2s forwards 9s; */
 }
 
 /* CSS for toggle button off state - Starts*/
@@ -148,9 +148,9 @@
 
 
 .concall-footer {
-    position: absolute;
+    position: relative;
     align-items: center;
-    top: 680px;
+    margin-top: 20px;
     gap: 5px;
 }
 

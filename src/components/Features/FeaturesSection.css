@@ -7,6 +7,12 @@
     justify-content: center;
     /* animation: LastAnimation 10s forwards 10s; */
 }
+.center-mask2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
 
 @keyframes LastAnimation {
     0% {
@@ -29,7 +35,8 @@
     gap: 27px;
     padding-top: 60px;
     grid-template-rows: repeat(10, minmax(550px, auto));
-    animation: scaleIn 10s forwards 10s;
+    
+    /* animation: scaleIn 10s forwards 10s; */
 }
 
 @keyframes scaleIn {
@@ -64,7 +71,7 @@
     height: 550px;
     background-color: #151515;
     opacity: 0;
-    animation: gridHide 14s forwards;
+    /* animation: gridHide 14s forwards; */
 }
 
 @keyframes gridHide {
@@ -87,7 +94,7 @@
     height: 500px;
     background-color: #151515;
     border-radius: 7.5px;
-    animation: sizeAnimation 2s forwards 9s;
+    /* animation: sizeAnimation 2s forwards 9s; */
 }
 
 .concall-section {
@@ -96,7 +103,7 @@
     background-color: #151515;
     border-radius: 7.5px;
     transition: all 0.2s;
-    animation: sizeAnimation 2s forwards 9s;
+    /* animation: sizeAnimation 2s forwards 9s; */
 }
 
 .corporate-section {
@@ -105,7 +112,7 @@
     height: 550px;
     background-color: #151515;
     border-radius: 7.5px;
-    animation: corporateAnimate 2s forwards 9s;
+    /* animation: corporateAnimate 2s forwards 9s; */
 }
 
 @keyframes corporateAnimate {
@@ -121,7 +128,7 @@
     height: 460px;
     background-color: #151515;
     border-radius: 7.5px;
-    animation: sizeAnimation 2s forwards 9s;
+    /* animation: sizeAnimation 2s forwards 9s; */
 }
 
 @keyframes sizeAnimation {
@@ -153,10 +160,10 @@
     border-radius: 4px;
     transform: scale(3.5);
 }
-
+/* 
 .hide-everything {
     animation: hideIn 1s forwards 17s;
-}
+} */
 
 @keyframes hideIn {
     100% {
@@ -167,10 +174,11 @@
 .complexity-text {
     position: absolute;
     opacity: 0;
-    top: 50%;
+    scale: 0;
+    top: 80%;
     left: 28vw;
     font-size: 52.5px;
-    animation: fadeIN 1.5s forwards 21s;
+    /* animation: fadeIN 1.5s forwards 21s; */
 }
 
 @keyframes fadeIN {
@@ -182,7 +190,7 @@
 
 .grid-email {
     position: absolute;
-    top: 63%;
+    top: 93%;
     opacity: 0;
     width: 540px;
     height: 137px;
@@ -190,7 +198,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: email-translate 1s forwards 22s;
+    opacity: 0;
+    scale: 0;
+    /* animation: email-translate 1s forwards 22s; */
 }
 
 @keyframes email-translate {
@@ -205,3 +215,5 @@
         scale: 0;
     }
 }
+
+
